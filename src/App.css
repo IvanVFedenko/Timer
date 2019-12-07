@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gr__ivanvfedenko_github_io {
+  background-color: rgb(34, 34, 34);
+}
+
+.gr__localhost {
+  background-color: rgb(34, 34, 34);
+}
+.App {
+  position: relative;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(34, 34, 34);
+  height: 700px;
+  color: rgb(250, 250, 250);
+}
+.App-title {
+  font-size: 50px;
+  padding: 25px 0;
+}
+
+.Timers {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .Timers {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Countdown {
+  position: relative;
+  margin: 150px auto;
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 10px;
+  width: 450px;
+  height: 350px;
+  background-color: rgb(22, 27, 31);
+  box-shadow: 0 3px 6px rgb(12, 12, 12);
+}
+
+.Countdown-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+button {
+  background-color: #202b33;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  width: 102px;
+}
+
+button:hover {
+  background-color: #106ba3;
+  outline: none;
+}
+
+button:disabled {
+  background-color: #232729;
+  color: rgb(78, 78, 78);
+  cursor: default;
+}
+
+.increase_button,
+.decrease_button {
+  width: 45px;
+}
+
+.Countdown-display {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.Countdown-display button {
+  margin: 0 27px;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  padding: 10px 16px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.Countdown-display button:hover {
+  background-color: #106ba3;
+}
+
+.Countdown-label {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.Countdown-time,
+.Countdown-alert {
+  font-size: 50px;
+  margin: 5px 0;
+}
+
+.Countdown-alert {
+  color: brown;
+}
+
+.Countdown-time-up {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: brown;
+}
+
+.Countdown-time-half {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.blink_alert,
+.Countdown-time-half {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
