@@ -3,13 +3,14 @@
   padding: 0;
 }
 
-.gr__ivanvfedenko_github_io {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
   background-color: rgb(34, 34, 34);
 }
 
-.gr__localhost {
-  background-color: rgb(34, 34, 34);
-}
 .App {
   position: relative;
   text-align: center;
